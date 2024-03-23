@@ -14,3 +14,5 @@ class Passengers(models.Model):
 
 class Meta:
         app_label = 'bmsBackend'
+
+# test
