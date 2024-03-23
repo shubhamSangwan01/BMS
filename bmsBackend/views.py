@@ -17,6 +17,7 @@ def create_station(request):
 
 @api_view(['GET'])
 def get_all_stations(request):
+    print("********************")
     stations = Station.objects.all()
     serializer = StationSerializer(stations, many=True)
     return Response(serializer.data)
