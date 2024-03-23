@@ -1,11 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "vercel_django_build.sh", "use": "@vercel/python" }
+    { "src": "build.sh", "use": "@vercel/python" }
   ],
   "routes": [
     { "src": "/static/(.)", "dest": "static/$1" },
     { "src": "/media/(.)", "dest": "media/$1" },
-    { "src": "/(.*)", "dest": "vercel_django_build.sh" }
+    { "src": "/(.*)", "dest": "build.sh" }
   ]
 }
