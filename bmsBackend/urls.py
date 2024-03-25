@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('stations/', views.create_station),
     path('stations/all/', views.get_all_stations),
+    path('journey/', views.create_journey),
 ]
 

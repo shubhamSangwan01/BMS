@@ -12,6 +12,13 @@ class Passengers(models.Model):
     offboard_frequency = models.IntegerField()
 
 
+class Journey(models.Model):
+    start_station = models.CharField(max_length=100)
+    end_station = models.CharField(max_length=100)
+    available_seats = models.IntegerField()
+    total_passengers = models.IntegerField()
+
+
 class Meta:
         app_label = 'bmsBackend'
 
